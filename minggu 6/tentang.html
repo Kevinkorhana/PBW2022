@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	* {
+	  box-sizing: border-box;
+	}
+
+	body {
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+
+	/* Style the header */
+	header {
+	  background-color: rgb(139, 0, 0));
+	  padding: 30px;
+	  text-align: center;
+	  font-size: 35px;
+	  color: black;
+	}
+
+	/* Create two columns/boxes that floats next to each other */
+	nav {
+	  float: left;
+	  width: 25%;
+	  background: rgb(93, 0, 0);
+	  padding: 20px;
+	}
+
+	/* Style the list inside the menu */
+	nav ul {
+	  list-style-type: none;
+	  padding: 0;
+	}
+
+	article {
+	  float: left;
+	  padding: 20px;
+	  width: 75%;
+	  background-color: #003f61;
+	}
+
+	/* Clear floats after the columns */
+	section::after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	/* Style the footer */
+	footer {
+	  background-color: #777;
+	  padding: 10px;
+	  text-align: center;
+	  color: white;
+	}
+
+	/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+	@media (max-width: 600px) {
+	  nav, article {
+		width: 100%;
+		height: auto;
+	  }
+	}
+	</style>
+</head>
+	<body>
+		<header>
+		  <h2>Kevin Korhana</h2>
+		</header>
+
+		  
+		  <article>
+			<h1>Biodata</h1>
+			<p> Nama: Kevin Korhan A
+				- Tempat Tanggal Lahir: Semarang, 18 September 2004
+				- Alamat: Jl.Rasamala Utara 2 No199
+				- No Hp: 085726163515
+				- Jenis Kelamin: Laki-laki
+				- Agama: Islam
+				- Kewarganegaraan: Indonesia
+				- Status: Belum Menikah
+				- Email: kevinarrizky58@gmail.com
+				- Hobi: Olahraga
+				- Pendidikan Terakhir: SMA </p>
+		  </article>
+		</section>
+
+		<footer>
+		  <p>Footer</p>
+		</footer>
+	</body>
+</html>
+
